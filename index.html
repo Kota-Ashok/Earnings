@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pay Particulars</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts for typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Navigation Tabs -->
+        <nav class="tabs">
+            <button class="tab">
+                <i class="fa-solid fa-bars"></i> Basic Details
+            </button>
+            <button class="tab active">
+                <i class="fa-solid fa-arrow-right"></i> Earnings & Deductions
+            </button>
+        </nav>
+
+        <!-- Header -->
+        <header class="header">
+            <h1>PAY PARTICULARS</h1>
+        </header>
+
+        <!-- Main Content Grid -->
+        <main class="main-content">
+
+            <!-- Earnings Panel -->
+            <section class="panel earnings-panel">
+                <div class="panel-header">
+                    <h2>Earnings</h2>
+                </div>
+
+                <div class="form-group stacked">
+                    <div class="input-field">
+                        <label>Earnings*</label>
+                        <div class="select-wrapper">
+                            <select>
+                                <option>Select...</option>
+                            </select>
+                            <i class="fas fa-chevron-down select-icon"></i>
+                        </div>
+                    </div>
+                    <div class="form-row-inline">
+                        <div class="input-field">
+                            <label>Amount</label>
+                            <input type="text" placeholder="Enter Amount...">
+                        </div>
+                        <button class="btn btn-primary add-btn">Add</button>
+                    </div>
+                </div>
+
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>S.NO</th>
+                                <th>Earning Description</th>
+                                <th>Earning Amount</th>
+                                <th class="text-center">Update</th>
+                                <th class="text-center">Delete</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>1001 -> Basic Pay</td>
+                                <td>45830</td>
+                                <td class="text-center">-</td>
+                                <td class="text-center">-</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>1005 -> Dearness Allowances</td>
+                                <td>17099</td>
+                                <td class="text-center">-</td>
+                                <td class="text-center">-</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>1007 -> House Rent Allowance</td>
+                                <td>4583</td>
+                                <td class="text-center">-</td>
+                                <td class="text-center">-</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>1166 -> EHS (Employer)</td>
+                                <td>300</td>
+                                <td class="text-center">
+                                    <button class="icon-btn edit-btn" title="Update"><i class="fas fa-pen"></i></button>
+                                </td>
+                                <td class="text-center">
+                                    <button class="icon-btn delete-btn" title="Delete"><i
+                                            class="fas fa-trash"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>1169 -> NPS_SAB_Employer</td>
+                                <td>6293</td>
+                                <td class="text-center">-</td>
+                                <td class="text-center">-</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>1174 -> Vice-Principal Allowance</td>
+                                <td>400</td>
+                                <td class="text-center">-</td>
+                                <td class="text-center">-</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="2" class="text-right font-bold">Total Earnings:</td>
+                                <td colspan="3" class="font-bold highlight-value">74,505</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Deductions Panel -->
+            <section class="panel deductions-panel">
+                <div class="panel-header">
+                    <h2>Deductions</h2>
+                </div>
+
+                <div class="form-group stacked">
+                    <div class="input-field">
+                        <label>Deductions*</label>
+                        <div class="select-wrapper">
+                            <select>
+                                <option>Select...</option>
+                            </select>
+                            <i class="fas fa-chevron-down select-icon"></i>
+                        </div>
+                    </div>
+                    <div class="form-row-inline">
+                        <div class="input-field">
+                            <label>Amount</label>
+                            <input type="text" placeholder="Enter Amount">
+                        </div>
+                        <button class="btn btn-primary add-btn">Add</button>
+                    </div>
+                </div>
+
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>S.NO</th>
+                                <th>Deduction Description</th>
+                                <th>Deduction Amount</th>
+                                <th class="text-center">Update</th>
+                                <th class="text-center">Delete</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>2000 -> Professional Tax_GOVT.</td>
+                                <td>200</td>
+                                <td class="text-center">-</td>
+                                <td class="text-center">-</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>2256 -> EHS (BOTH) _PSE</td>
+                                <td>600</td>
+                                <td class="text-center">
+                                    <button class="icon-btn edit-btn" title="Update"><i class="fas fa-pen"></i></button>
+                                </td>
+                                <td class="text-center">
+                                    <button class="icon-btn delete-btn" title="Delete"><i
+                                            class="fas fa-trash"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>2263 -> NPS_SAR(Both_20%) _PSE</td>
+                                <td>12586</td>
+                                <td class="text-center">-</td>
+                                <td class="text-center">-</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="2" class="text-right font-bold">Total Deductions:</td>
+                                <td colspan="3" class="font-bold danger-value">13,386</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" class="text-right font-bold" style="font-size: 1.1rem;">Net:</td>
+                                <td colspan="3" class="font-bold" style="font-size: 1.25rem;">61,119</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer-actions">
+            <button class="btn btn-primary"><i class="fas fa-arrow-left"></i> Previous</button>
+        </footer>
+    </div>
+</body>
+
+</html>
